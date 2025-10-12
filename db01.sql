@@ -1,3 +1,7 @@
+SHOW DATABASES;
+
+SELECT User, Host FROM mysql.user;
+
 CREATE DATABASE db01;
 -- CREATE SCHEMA and CREATE DATABASE are synonyms in MySQL,
 -- but for example in Oracle BD schema can be used to represent a part of the database.
