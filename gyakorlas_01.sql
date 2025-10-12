@@ -55,6 +55,7 @@ FROM ingatlanok
 GROUP BY helyseg
 ORDER BY MAX(ingatlanok.ar) DESC
 LIMIT 20;
+-- itt a LIMIT 20 nem fog érvényesülni mert csak 5 Város szerepel az eredmény listában
 
 /* 6. feladat: Készítsen megyek néven egy olyan táblát, amelynek három mezője van: (1) a megye_ID mező
 legyen automatikus számozású, INT típusú elsődleges kulcs; (2) a megye_nev legfeljebb 30 karakteres
@@ -78,3 +79,11 @@ ALTER TABLE ingatlanok
 
 /* 8. feladat: Készítsen törlő lekérdezést, amellyel törölheti az ingatlanok táblából azokat az ingatlanokat,
 amelyek 1.000.000 Ft-nál olcsóbbak vagy Ajkán találhatóak! A törlő parancsot mentse a worddokumentumba! */
+SELECT ingatlan_ID
+FROM ingatlanok
+WHERE ar < 1 OR helyseg = 'Ajka';
+-- ez csak egy előzetes ellenőrzés amivel megnézem milyen rekordok kerülnek törlésre.
+
+DELETE
+FROM ingatlanok
+       WHERE ar < 1 OR helyseg = 'Ajka';
