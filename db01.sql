@@ -39,3 +39,5 @@ VALUES (
         '2025-09-06',
         '107'
     );
+
+SELECT user FROM mysql.user;
