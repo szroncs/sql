@@ -26,3 +26,30 @@ or add a `COMMENT` value to describe the database in detail:
 CREATE DATABASE hungarian_names
     COMMENT 'List all officially usable names in Hungary';
 ```
+
+# Előadás 2025-10-11
+Papp-Szigeti 
+- Check moodle - ide lesznek feltéve az anyagok
+- Gyakorlat 60 pont / min 35 pontot kell elérni
+- Elméleti 40 pont / min 15 pontot kell elérni
+- Moodle-el 5 pontot lehet pluszban elérni
+- Komm: Teams-en keresztül
+
+XAMP alkalmazás használata (Apache)
+MySql server (de valójában MariaDB)
+- relációs adatbázis
+- hierarchikus adatbázis (file rendszer : NTFS; FAT; ...)
+
+Knightlab / SQL Murder Mystery - egy SQL syntax alapú játék
+
+## Tananyag
+### Adatmodellezés
+- UML diagram
+- AFD - adatfolyam diagram
+- ERD - entity relationship diagram
+
+Logikai adatbázis-terv
+Fizikai terv
+
+Adatbázis optimalizálás
+
